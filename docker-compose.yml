@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  postgreSQL:
+    image: postgres:15.3
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_DB: microsafe
+      POSTGRES_PASSWORD: 123456
+    volumes:
+      - ./postgres:/var/lib/postgres/data
+    ports:
+      - 5432:5432
