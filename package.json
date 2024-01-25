@@ -5,16 +5,12 @@
   "type": "module",
   "scripts": {
     "start": "node ./src/app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "seed": "node ./src/data/postgres/seed.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "nodemon": "^3.0.3",
-    "prisma": "^5.8.1"
-  },
   "dependencies": {
-    "@prisma/client": "^5.8.1"
+    "pg": "^8.11.3"
   }
 }

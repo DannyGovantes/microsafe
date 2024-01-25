@@ -9,7 +9,12 @@ export class Display {
 
   displayMessage() {
     if (this.controller) {
-      console.log(this.controller.getMessage());
+      const messageDisplay = this.controller.getMessage();
+      if (messageDisplay.length > this.charactersLimit) {
+        console.log(messageDisplay.substring(0, this.charactersLimit));
+      } else {
+        console.log(messageDisplay);
+      }
     }
   }
 }

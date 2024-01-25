@@ -1,29 +1,29 @@
-# Config for initializing
+# Configuración de inicialización
 
-## Install dependencies
+## Instalar dependencias
 
 ```
 npm install
 
 ```
 
-## Run database with docker
+## Correr base de datos con docker
 
 ```
 docker compose up -d
 
 ```
 
-## Run database from prisma
+## Crear tablas para el proyecto
 
 ```
-npx prisma init --datasource-provider postgresql
+npm run seed
 
 ```
 
-## Run database migration
+## Hacer la simulación de los ejercicios
 
 ```
-npx prisma migrate dev --name init
+npm start
 
 ```
